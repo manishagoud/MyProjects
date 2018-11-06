@@ -1,8 +1,9 @@
 package com.spring.com.spring;
 
-public class Student {
+public class Student 
+{
 
-	private Integer age;
+	   private Integer age;
 	   private String name;
 
 	   public void setAge(Integer age) {

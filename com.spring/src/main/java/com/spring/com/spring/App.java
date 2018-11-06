@@ -18,6 +18,9 @@ public class App
      ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
       
       Student student = (Student) ( (AbstractApplicationContext) context).getBean("student");
+//      Student student = new Student();
+//      student.setName("zara");
+//      student.setAge(11);
       student.getName();
       student.getAge();
       student.printThrowException();

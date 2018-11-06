@@ -7,7 +7,10 @@
    http://www.springframework.org/schema/aop 
    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
 
-   <aop:config>
+
+<aop:aspectj-autoproxy></aop:aspectj-autoproxy> 
+
+<!--   <aop:config>
       <aop:aspect id = "log" ref = "logging">
          <aop:pointcut id = "selectAll" 
             expression = "execution(* com.spring.com.spring.Student.*(..))"/>
@@ -20,7 +23,7 @@
          <aop:after-throwing pointcut-ref = "selectAll" 
             throwing = "ex" method = "AfterThrowingAdvice"/>
       </aop:aspect>
-   </aop:config>
+   </aop:config> -->
 
    <!-- Definition for student bean -->
    <bean id = "student" class = "com.spring.com.spring.Student">

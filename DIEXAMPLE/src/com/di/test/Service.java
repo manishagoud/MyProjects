@@ -7,7 +7,6 @@ public class Service {
 	public Service()
 	{
 		
-		
 	}
 	public Service(String Name)
 	{
